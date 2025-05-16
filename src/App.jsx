@@ -14,7 +14,7 @@ function App() {
   return (
     <AuthProvider>
       <Routes>
-        {/* Redirect root to /dashboard or /sign-in depending on auth */}
+        {/* Redirect root to dashboard */}
         <Route path="/" element={<Navigate to="/dashboard" replace />} />
 
         {/* Public routes */}
