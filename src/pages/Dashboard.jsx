@@ -43,7 +43,7 @@ const Dashboard = () => {
 
     <section className="bg-[#111827] p-4 rounded-lg mb-6">
       <h3 className="mb-2">2 Bank Accounts</h3>
-      <p className="text-3xl font-bold">£35,000.00</p>
+      <p className="text-3xl font-bold">£35,477.12</p>
     </section>
 
     <section className="bg-[#111827] p-4 rounded-lg">
