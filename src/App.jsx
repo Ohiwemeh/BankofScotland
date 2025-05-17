@@ -1,24 +1,57 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 
-function Home() {
-  return <h1>Home Page</h1>;
-}
-function About() {
-  return <h1>About Page</h1>;
-}
-function NotFound() {
-  return <h1>404 Page Not Found</h1>;
-}
+import { AuthProvider } from './context/AuthContext';
+import PrivateRoute from './components/PrivateRoute';
 
-export default function App() {
+import LoginPage from './pages/LoginPage';
+import SignUpPage from './pages/SignUp';
+import Dashboard from './pages/Dashboard';
+import TransactionHistory from './pages/TransactionHistory';
+import PaymentTransfer from './pages/PaymentTransfer';
+
+function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Navigate to="/home" replace />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+    <AuthProvider>
+      <Routes>
+        {/* Redirect root to dashboard */}
+        <Route path="/" element={<Navigate to="/dashboard" replace />} />
+
+        {/* Public routes */}
+        <Route path="/sign-in" element={<LoginPage />} />
+        <Route path="/sign-up" element={<SignUpPage />} />
+
+        {/* Private routes */}
+        <Route
+          path="/dashboard"
+          element={
+            <PrivateRoute>
+              <Dashboard />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/transaction-history"
+          element={
+            <PrivateRoute>
+              <TransactionHistory />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/payment-transfer"
+          element={
+            <PrivateRoute>
+              <PaymentTransfer />
+            </PrivateRoute>
+          }
+        />
+
+        {/* Catch-all for 404 */}
+        <Route path="*" element={<h1 className="p-8 text-center">404 – Page Not Found</h1>} />
+      </Routes>
+    </AuthProvider>
   );
 }
 
+export default App;
