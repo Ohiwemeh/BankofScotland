@@ -98,7 +98,7 @@ export default function PaymentTransfer() {
           <h4 className="text-sm text-gray-400 mb-2">My Banks</h4>
           <div className="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-4 rounded-lg">
             <p className="text-xs">Bryan Walker</p>
-            <p className="text-sm mt-1">**** **** **** 9999</p>
+            <p className="text-sm mt-1">**** **** **** 9457</p>
             <p className="text-xs mt-2">06/27</p>
           </div>
         </section>

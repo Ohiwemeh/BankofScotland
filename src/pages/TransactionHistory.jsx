@@ -100,7 +100,7 @@ const TransactionHistory = () => {
         <div>
           <p className="text-sm">Bank of ScotLand</p>
           <p className="font-semibold">Bryan Walker</p>
-          <p className="mt-1 tracking-widest">•••• •••• •••• 9999</p>
+          <p className="mt-1 tracking-widest">**** **** **** 9457</p>
         </div>
         <div className="text-right">
           <p className="text-sm">Current Balance</p>
