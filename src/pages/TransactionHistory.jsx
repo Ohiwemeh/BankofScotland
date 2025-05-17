@@ -104,7 +104,7 @@ const TransactionHistory = () => {
         </div>
         <div className="text-right">
           <p className="text-sm">Current Balance</p>
-          <p className="text-2xl font-bold">£35,000,00</p>
+          <p className="text-2xl font-bold">£35,477.12</p>
         </div>
       </div>
 
