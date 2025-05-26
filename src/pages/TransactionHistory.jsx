@@ -3,6 +3,15 @@ import React from 'react';
 const transactions = [
   {
     id: 1,
+    title: 'Amazon',
+    amount: '- £5000.63',
+    status: 'Success',
+    date: 'Tue 3:30pm',
+    category: 'Fashion',
+    type: 'expense',
+  },
+  {
+    id: 2,
     title: 'Spotify',
     amount: '- £15.00',
     status: 'Processing',
@@ -11,7 +20,7 @@ const transactions = [
     type: 'expense',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Salary',
     amount: '+ £10,000.00',
     status: 'Success',
@@ -20,7 +29,7 @@ const transactions = [
     type: 'income',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Amazon',
     amount: '- £120.00',
     status: 'Success',
@@ -29,7 +38,7 @@ const transactions = [
     type: 'expense',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Freelance',
     amount: '+ £5,000.00',
     status: 'Success',
@@ -38,7 +47,7 @@ const transactions = [
     type: 'income',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Netflix',
     amount: '- £13.99',
     status: 'Processing',
@@ -47,7 +56,7 @@ const transactions = [
     type: 'expense',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Apple Store',
     amount: '- £299.99',
     status: 'Failed',
@@ -56,7 +65,7 @@ const transactions = [
     type: 'expense',
   },
   {
-    id: 7,
+    id: 8,
     title: 'Upwork Payout',
     amount: '+ £2,150.00',
     status: 'Success',
@@ -104,7 +113,7 @@ const TransactionHistory = () => {
         </div>
         <div className="text-right">
           <p className="text-sm">Current Balance</p>
-          <p className="text-2xl font-bold">£35,477.12</p>
+          <p className="text-2xl font-bold">£30,347.99</p>
         </div>
       </div>
 
